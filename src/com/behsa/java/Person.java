@@ -8,6 +8,8 @@ public class Person {
     private String name;
     private String family;
 
+    //changes
+    //this is in login branch
 
     public String getName() {
         return name;
