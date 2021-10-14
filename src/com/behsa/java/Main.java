@@ -13,6 +13,8 @@ public class Main {
         String str2 = "java";
 
 
+
+
         System.out.println(isDigit);
         int len = str.length();
 
@@ -27,14 +29,19 @@ public class Main {
         item = item + item2;
 
 
-        Person p1 = new Person();
-        Person p2 = new Person();
-        p1.setName("ali");
-        p1.setAge(12);
+        Person p1 = new Person(12 , "ali", "rezaee");
+        Person p2 = new Person(12 , "ali", "rezaee");
+
+        if(p1.equals(p2))
+            System.out.println(true);
 
 
 
+        int i2 = 3;
+        int j2 = 7;
+        if(i2 > 0 && j2 > 2){
 
+        }
 
     }
 }
