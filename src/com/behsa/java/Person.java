@@ -6,6 +6,7 @@ public class Person {
     //property
     private int age;
     private String name;
+    private String family;
 
 
     public String getName() {
@@ -22,5 +23,13 @@ public class Person {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public String getFamily() {
+        return family;
+    }
+
+    public void setFamily(String family) {
+        this.family = family;
     }
 }
