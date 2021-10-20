@@ -43,6 +43,13 @@ public class Main {
 
         }
 
+        if(j2 >1){
+
+        }
+
+        Person person = new Person("ali","ahmadi");
+
+
     }
 }
 
