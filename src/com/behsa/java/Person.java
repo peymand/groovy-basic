@@ -2,9 +2,14 @@ package com.behsa.java;
 
 public class Person {
 
+    public static int MAX_AGE = 120;
+
+    public static class Info{
+        public int nc;
+    }
 
     //property
-    private int age;
+    int age;
     private String name;
     private String family;
 
@@ -19,11 +24,18 @@ public class Person {
         this.family = family;
     }
 
+    public Person(){}
+
+    public static void study(){
+
+    }
+
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
+
         this.name = name;
     }
 
