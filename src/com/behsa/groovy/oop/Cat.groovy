@@ -8,7 +8,6 @@ class Cat extends Animal{
     @PackageScope
     String ownerName
 
-    @Override
     def move() {
         println "As a Cat I moved"
     }
@@ -16,6 +15,13 @@ class Cat extends Animal{
     @Override
     String toString() {
         return this.name
+    }
+
+    def asBoolean(){
+        if(this.name)
+            true
+        else
+            false
     }
 
     @Override

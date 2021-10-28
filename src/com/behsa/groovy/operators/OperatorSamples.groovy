@@ -153,10 +153,12 @@ assert user.@name == 'Bob'
 //method pointer
 
 def str = 'groovy is a programming language'
+
+if(str)//groovy truth
 def dummyMethod = str.&toUpperCase
 def dummyMethod2 = user.&getName
 
-res =  dummyMethod()
+res =  dummyMethod()  ///str.toUpperCase()
 
 assert res == 'GROOVY IS A PROGRAMMING LANGUAGE'
 assert dummyMethod2() == 'Name : Bob'
@@ -186,7 +188,7 @@ class Bucket{
 
     Bucket(int size) {this.size = size}
 
-    Bucket plus(Bucket other){
+    Bucket plus2(Bucket other){
         new Bucket(this.size + other.size)
     }
 
