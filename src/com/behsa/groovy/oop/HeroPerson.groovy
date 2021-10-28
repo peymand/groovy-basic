@@ -15,5 +15,10 @@ class HeroPerson implements Hero, Person{
     boolean takeRest(int minutes) {
         return false
     }
+
+//    @Override
+//    def canSwim() {
+//        return ""
+//    }
 }
 
