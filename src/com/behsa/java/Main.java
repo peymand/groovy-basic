@@ -1,8 +1,18 @@
 package com.behsa.java;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+
+        String dataBaseUrl =  args[0];
+        String port = args[1];
+
+        System.out.println(args[0]);
+
+        System.out.println(System.getenv(args[0]));
+
         System.out.println("Hello World");
         //data definition
         //Types in java primitive types & Object types
@@ -13,8 +23,13 @@ public class Main {
         String str2 = "java";
 
 
+        int[] arrx = new int[4];
+        arrx[0] = 3;
+        arrx[1] = 4;
 
+        int[] arr = {3,4,5,6};
 
+//        String[] texts = {"ali", new String("reza")};
         System.out.println(isDigit);
         int len = str.length();
 
