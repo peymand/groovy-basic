@@ -30,10 +30,7 @@ def p3 = new Person(name: "sara", family: "mahdavi" , age: 19)
 def arr = [p1, p2,p3]
 //Comparator<Person> cmp = { person1 , person2 -> (person1.family > person2.family) ? 1 : -1 }
 
-Comparator<Person> cmp = (Person o1, 3 o2) -> {
-        return (o1.family > o2.family) ? 1 : -1
-    }
-Clo
+
 arr.sort(cmp)
 
 for (Person p  : arr) {
