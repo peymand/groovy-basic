@@ -1,8 +1,15 @@
 package com.behsa.java;
 
-public class Person {
+public class Person implements Comparable<Person> {
 
     public static int MAX_AGE = 120;
+
+    @Override
+    public int compareTo(Person o) {
+        if(this.age > o.age) return 1;
+        else if(o.age > this.age) return -1;
+        else return 0;
+    }
 
     public static class Info{
         public int nc;
