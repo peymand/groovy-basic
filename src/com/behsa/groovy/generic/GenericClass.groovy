@@ -1,5 +1,7 @@
 package com.behsa.groovy.generic
 
+import groovy.sql.Sql
+
 class Stack <T>{
 
     T[] arr
@@ -40,7 +42,3 @@ println stack.pop()
 
 
 Stack<String> stackText = new Stack<>(3)
-
-Li
-
-

@@ -2,7 +2,6 @@ package com.behsa.groovy.oop
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.PackageScope
-
 class Cat extends Animal{
 
     @PackageScope

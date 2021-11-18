@@ -2,6 +2,10 @@ package com.behsa.java;
 
 import com.sun.media.sound.InvalidDataException;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -22,11 +26,17 @@ public class Main2 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         getYear("1400/12/12");
 
+        File file = new File("dummy.txt");
+        FileWriter writer = new FileWriter(file,true);
+        writer.append("ali is ok");
+        writer.close();
 
+//        FileReader reader = new FileReader(file);
+//        reader.
 
     }
 
